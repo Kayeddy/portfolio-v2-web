@@ -2,9 +2,6 @@
 
 import ibgroup from "/src/assets/images/ib-group-desktop.webp";
 import memento from "/src/assets/images/memento-desktop.webp";
-import acc from "/src/assets/images/acc-square.webp";
-import daddy from "/src/assets/images/godaddy-desktop.webp";
-import sunnyside from "/src/assets/images/sunnyside-desktop.webp";
 import Projects from "../ui/Projects";
 import Heading from "../ui/Heading";
 
@@ -32,7 +29,7 @@ export default function Works({ forwardedRef, hashRef }) {
           {/* Project #2 */}
           <div className="col-span-1 pt-0 md:col-span-7 md:pt-16">
             <Projects
-              link="https://mementostudio.netlify.app/"
+              link="https://threads-clone-web.vercel.app"
               img={memento}
               alt="personal threads clone website"
               name="personal threads clone website"

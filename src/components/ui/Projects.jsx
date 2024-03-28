@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 export default function Projects({ name, img, alt, type, link, year, tools }) {
   return (
     <div>
@@ -5,7 +6,7 @@ export default function Projects({ name, img, alt, type, link, year, tools }) {
         target="_blank"
         rel="noreferrer"
         href={link}
-        className="img group inline-block overflow-hidden duration-200 ease-linear hover:rounded-3xl"
+        className="inline-block overflow-hidden duration-200 ease-linear img group hover:rounded-3xl"
       >
         <img
           className="w-screen duration-700 ease-in-out group-hover:scale-105"
@@ -16,19 +17,19 @@ export default function Projects({ name, img, alt, type, link, year, tools }) {
         />
       </a>
       <div className="mt-4">
-        <div className="mb-3 flex space-x-2">
-          <p className="flex items-center justify-center rounded-full border border-secondary-600 bg-transparent px-4 py-1 text-body-4 text-secondary-600 2xl:text-3xl">
+        <div className="flex mb-3 space-x-2">
+          <p className="flex items-center justify-center px-4 py-1 bg-transparent border rounded-full border-secondary-600 text-body-4 text-secondary-600 2xl:text-3xl">
             {year}
           </p>
-          <p className="flex items-center justify-center rounded-full border border-secondary-600 bg-transparent px-4 py-1 text-body-4 text-secondary-600 2xl:text-3xl">
+          <p className="flex items-center justify-center px-4 py-1 bg-transparent border rounded-full border-secondary-600 text-body-4 text-secondary-600 2xl:text-3xl">
             {tools}
           </p>
         </div>
         <div className="2xl:space-y-3">
-          <h3 className="text-works-title font-medium uppercase text-primary-200 2xl:text-5xl">
+          <h3 className="font-medium uppercase text-works-title text-primary-200 2xl:text-5xl">
             {name}
           </h3>
-          <p className="text-body-2 font-light text-primary-400 2xl:text-4xl">
+          <p className="font-light text-body-2 text-primary-400 2xl:text-4xl">
             {type}
           </p>
         </div>
