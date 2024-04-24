@@ -36,14 +36,18 @@ export default function About() {
   }, [aboutSection]);
 
   return (
-    <section ref={aboutSection} aria-label="about me" className="h-screen">
+    <section
+      ref={aboutSection}
+      aria-label="about me"
+      className="h-fit min-h-screen"
+    >
       <Heading title="about me" />
-      <div className="flex flex-col items-start gap-8 mt-10 md:flex-row lg:gap-10 ">
-        <div className="overflow-hidden rounded-md top-28 md:sticky md:w-1/2">
+      <div className="mt-10 flex flex-col items-start gap-8 md:flex-row lg:gap-10 ">
+        <div className="top-28 overflow-hidden rounded-md md:sticky md:w-1/2">
           <img
             ref={profile}
             loading="lazy"
-            className="object-cover object-center w-full h-auto rounded-md aspect-square md:aspect-auto"
+            className="aspect-square h-auto w-full rounded-md object-cover object-center md:aspect-auto"
             src={profileImg}
             width="600"
             height="800"
@@ -54,13 +58,13 @@ export default function About() {
           <div className="w-full space-y-4 2xl:space-y-10">
             <h3
               ref={heading}
-              className="font-semibold leading-tight translate-y-10 opacity-0 text-heading-3 2xl:text-7xl"
+              className="translate-y-10 text-heading-3 font-semibold leading-tight opacity-0 2xl:text-7xl"
             >
               So, what's my story?
             </h3>
             <p
               ref={body}
-              className="translate-y-10 opacity-0 text-body-1 2xl:text-4xl"
+              className="translate-y-10 text-body-1 opacity-0 2xl:text-4xl"
             >
               Greetings! I'm a spirited full-stack developer and UI/UX
               enthusiast from the stunning Archipelago of San Andres y
