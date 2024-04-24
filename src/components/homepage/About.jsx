@@ -16,7 +16,7 @@ export default function About() {
   useEffect(() => {
     ScrollTrigger.create({
       trigger: aboutSection.current,
-      start: "top 400px",
+      start: "top 400px", // Was 400px
       animation: gsap
         .timeline()
         .to(
