@@ -27,8 +27,8 @@ const App = () => {
       headings.forEach((individualHeading) => {
         ScrollTrigger.create({
           trigger: heading,
-          start: "top 400px", // Was 550px
-          end: "bottom 400px", // Was 550px
+          start: "top 550px", // Was 550px
+          end: "bottom 550px", // Was 550px
           animation: gsap.to(individualHeading, {
             opacity: 1,
             y: 0,

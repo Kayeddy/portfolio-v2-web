@@ -8,10 +8,10 @@ import Heading from "../ui/Heading";
 
 export default function Works({ forwardedRef, hashRef }) {
   return (
-    <div id="works" ref={hashRef} className="mt-[20%] md:mt-[150px]">
+    <div id="works" ref={hashRef}>
       <section
         ref={forwardedRef}
-        className="nav-change overflow-hidden pt-[10%]"
+        className="nav-change h-fit min-h-screen overflow-hidden py-24"
       >
         <Heading title="Projects" />
         <div className="mt-10 grid grid-cols-1 gap-16 gap-y-10 md:grid-cols-12">

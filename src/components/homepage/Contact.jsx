@@ -50,7 +50,7 @@ export default function Contact({ hashRef }) {
     <section
       ref={hashRef}
       id="contact"
-      className="mt-[20%] overflow-hidden pt-[10%] md:mt-[10%] "
+      className="h-fit min-h-screen overflow-hidden py-24"
       aria-label="contact me"
     >
       <Heading title="Contact" />
