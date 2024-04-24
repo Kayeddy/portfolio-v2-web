@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 
-import ibgroup from "/src/assets/images/ib-group-desktop.webp";
-import memento from "/src/assets/images/memento-desktop.webp";
+import throu from "/src/assets/images/throu.webp";
+import threadsy from "/src/assets/images/threadsy.webp";
+import acc from "/src/assets/images/acc.webp";
 import Projects from "../ui/Projects";
 import Heading from "../ui/Heading";
 
@@ -13,12 +14,12 @@ export default function Works({ forwardedRef, hashRef }) {
         className="nav-change overflow-hidden pt-[10%]"
       >
         <Heading title="Projects" />
-        <div className="grid grid-cols-1 gap-16 mt-10 gap-y-10 md:grid-cols-12">
+        <div className="mt-10 grid grid-cols-1 gap-16 gap-y-10 md:grid-cols-12">
           {/* Project #1 */}
           <div className="col-span-1 md:col-span-12">
             <Projects
               link="https://throu.app"
-              img={ibgroup}
+              img={throu}
               alt="Throu Investments Website"
               name="throu investments website"
               type="Blockchain development • Fullstack Development"
@@ -30,7 +31,7 @@ export default function Works({ forwardedRef, hashRef }) {
           <div className="col-span-1 pt-0 md:col-span-7 md:pt-16">
             <Projects
               link="https://threads-clone-web.vercel.app"
-              img={memento}
+              img={threadsy}
               alt="personal threads clone website"
               name="personal threads clone website"
               type="Fullstack Development"
@@ -38,6 +39,19 @@ export default function Works({ forwardedRef, hashRef }) {
               tools="ReactJS • NextJs • Typescript • TailwindCSS"
             />
           </div>
+          {/* Project #3 */}
+          <div className="col-span-1 pt-0 md:col-span-5 md:pt-80">
+            <Projects
+              link="https://connect2pet.app"
+              img={acc}
+              alt="connect2pet launch website"
+              name="connect 2 pet launch website"
+              type="Web Design • Frontend Development"
+              year="2024"
+              tools="ReactJS • SCSS • Figma"
+            />
+          </div>
+
           {/* <div className="col-span-1 pt-0 md:col-span-5 md:pt-80">
             <Projects
               link="https://realbusinessaccountants.netlify.app"
