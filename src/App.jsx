@@ -12,6 +12,9 @@ import Works from "./components/homepage/Works";
 import Contact from "./components/homepage/Contact";
 import Footer from "./components/ui/Footer";
 
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 const App = () => {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -72,6 +75,8 @@ const App = () => {
 
   return (
     <div className="bg-secondary-100">
+      <Analytics />
+      <SpeedInsights />
       <NavBar sectionRefs={sectionRefs.current} />{" "}
       {/* passing sectionRefs props to give access to Navbar, Navbar can then access the props which have access to the array of sectionRef and loop over it */}
       <Hero hashRef={(el) => (hashRefs.current[0] = el)} />
