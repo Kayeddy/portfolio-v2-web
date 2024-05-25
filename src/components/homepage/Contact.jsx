@@ -173,12 +173,21 @@ export default function Contact({ hashRef }) {
             </h4>
             <div className="flex flex-col space-y-3 text-body-2 2xl:text-3xl">
               <a
-                href="mailto:djeddyedward@gmail.com"
+                href="mailto:sheddagame@gmail.com"
                 className="group relative w-fit cursor-pointer"
                 target="_blank"
                 rel="noreferrer"
               >
-                <span>djeddyedward@gmail.com</span>
+                <span>sheddagame@gmail.com</span>
+                <span className="absolute bottom-0 left-0 h-[0.12em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
+              </a>
+
+              <a
+                href="/Resume.pdf"
+                download
+                className="group relative w-fit cursor-pointer"
+              >
+                <span>Curriculum Vitae</span>
                 <span className="absolute bottom-0 left-0 h-[0.12em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
               </a>
             </div>

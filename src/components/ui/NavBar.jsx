@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import Lenis from "@studio-freight/lenis";
-
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { DownloadIcon } from "@radix-ui/react-icons";
 
 export default function NavBar({ sectionRefs }) {
   const navBar = useRef(null);
@@ -18,7 +18,7 @@ export default function NavBar({ sectionRefs }) {
       requestAnimationFrame(raf);
     }
     requestAnimationFrame(raf);
-  });
+  }, []);
 
   useEffect(() => {
     tl.to(navBar.current, {
@@ -27,7 +27,7 @@ export default function NavBar({ sectionRefs }) {
       delay: 0.5,
       ease: "power4.inOut",
     });
-  });
+  }, [tl]);
 
   useEffect(() => {
     sectionRefs.forEach((section) => {
@@ -45,12 +45,12 @@ export default function NavBar({ sectionRefs }) {
         toggleActions: "restart reverse restart reverse",
       });
     });
-  });
+  }, [sectionRefs]);
 
   return (
     <header
       ref={navBar}
-      className="fixed top-0 z-50 flex items-center justify-between w-full px-5 py-3 -translate-y-full select-none bg-secondary-100"
+      className="fixed top-0 z-50 flex w-full -translate-y-full select-none items-center justify-between bg-secondary-100 px-5 py-3"
     >
       <div ref={logo}>
         <a
@@ -58,7 +58,7 @@ export default function NavBar({ sectionRefs }) {
           aria-label="Logo"
           className="z-50 flex flex-row items-start gap-2"
         >
-          <span className="font-bold leading-tight text-heading-3 ">Eddy</span>
+          <span className="text-heading-3 font-bold leading-tight ">Eddy</span>
           <svg
             width="20"
             height="20"
@@ -76,21 +76,32 @@ export default function NavBar({ sectionRefs }) {
       </div>
 
       <nav className="space-x-7 font-grotesk text-body-3 sm:block">
-        <a href="#about" className="relative hidden group md:inline-block">
+        <a href="#about" className="group relative hidden md:inline-block">
           <span>about</span>
           <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
         </a>
-        <a href="#services" className="relative hidden group md:inline-block">
+        <a href="#services" className="group relative hidden md:inline-block">
           <span>services</span>
           <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
         </a>
-        <a href="#works" className="relative hidden group md:inline-block">
+        <a href="#works" className="group relative hidden md:inline-block">
           <span>projects</span>
           <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
         </a>
+
+        <a
+          href="/Resume.pdf"
+          download
+          className="group relative hidden rounded-full md:inline-block"
+        >
+          <span className="flex flex-row items-center justify-center gap-2 rounded-full bg-secondary-700 bg-opacity-50 px-6 py-1">
+            Resume <DownloadIcon />
+          </span>
+        </a>
+
         <a
           ref={cta}
-          className="relative button group hover:bg-transparent"
+          className="button group relative hover:bg-transparent"
           href="#contact"
         >
           <span className="relative w-fit">
