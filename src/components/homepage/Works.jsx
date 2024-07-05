@@ -4,6 +4,7 @@ import throu from "/src/assets/images/throu.webp";
 import gdc from "/src/assets/images/gdc.webp";
 import threadsy from "/src/assets/images/threadsy.webp";
 import c2p_launch from "/src/assets/images/c2p_launch.webp";
+import maski from "/src/assets/images/maski.webp";
 
 import Projects from "../ui/Projects";
 import Heading from "../ui/Heading";
@@ -20,26 +21,30 @@ export default function Works({ forwardedRef, hashRef }) {
           {/* Project #1 */}
           <div className="col-span-1 md:col-span-12">
             <Projects
-              link="https://throu.app"
-              img={throu}
-              alt="Throu Investments Website"
-              name="throu investments website"
-              type="Blockchain development • Fullstack Development"
-              year="2022"
-              tools="ReactJS • TailwindCSS • JavaScript • Vite"
+              link="https://maski.pet"
+              img={maski}
+              alt="Maski"
+              name="Maski"
+              type="Web Design • Fullstack Development"
+              year="2024"
+              tools="Figma • NextJs • Typescript • TailwindCSS • MongoDB"
+              description="Tinder-like app designed to make pet adoption an
+          enjoyable and intuitive experience. Swipe through profiles of adorable
+          pets, just like you would on a dating app, to find the perfect match."
             />
           </div>
 
           {/* Project #2 */}
           <div className="col-span-1 h-fit pt-0 md:col-span-8 md:pt-20">
             <Projects
-              link="globaldeveloperclubs.com"
-              img={gdc}
-              alt="global developers club website"
-              name="Global developers Club"
-              type="Web Design • Fullstack Development"
-              year="2024"
-              tools="Figma • NextJs • Typescript • TailwindCSS • Clerk • MongoDB"
+              link="https://throu.app"
+              img={throu}
+              alt="throu_investments_platform"
+              name="Throu investments"
+              type="Blockchain development • Fullstack Development"
+              year="2022"
+              tools="ReactJS • TailwindCSS • JavaScript • Vite "
+              description="Platform that allows the tokenization of real estate assets, making it easier for investors to buy and sell fractions of properties."
             />
           </div>
 
@@ -48,24 +53,39 @@ export default function Works({ forwardedRef, hashRef }) {
             <Projects
               link="https://connect2pet.app"
               img={c2p_launch}
-              alt="connect2pet launch website"
-              name="connect 2 pet launch website"
+              alt="connect_2_pet_pre_launch_website"
+              name="CONNECT2PET PRE-LAUNCH"
               type="Web Design • Frontend Development"
               year="2024"
               tools="ReactJS • SCSS • Figma • Vite"
+              description="pre-launch website of Maski, formerly known as Connect2Pet. This website was designed to track and engage potential users in the pet adoption community that would be interested in using the official version of the platform."
             />
           </div>
 
           {/* Project #4 */}
           <div className="col-span-1 pt-0 md:col-span-7 md:pt-16">
             <Projects
-              link="https://threads-clone-web.vercel.app"
-              img={threadsy}
+              link="https://globaldeveloperclubs.com"
+              img={gdc}
               alt="personal threads clone website"
-              name="personal threads clone website"
-              type="Fullstack Development"
+              name="GlOBAL DEVELOPERS CLUB"
+              type="Web Design • Fullstack Development "
               year="2023"
-              tools="NextJs • Typescript • TailwindCSS • Clerk • MongoDB"
+              tools="NextJs • Typescript • TailwindCSS • MongoDB"
+              description="At Global Developers Club, we provide exclusive resources and support from our partners to help you and your co-founders or team members take your project to the next level. From the initial idea to a fully developed product, we are here to assist you every step of the way."
+            />
+          </div>
+
+          <div className="col-span-1 h-fit md:col-span-4">
+            <Projects
+              link="https://sunnysidechallenge.netlify.app"
+              img={threadsy}
+              alt="threads_clone"
+              name="THREADS CLONE"
+              type="Web Design • Fullstack Development "
+              year="2024"
+              tools="NextJs • Typescript • TailwindCSS • MongoDB"
+              description="A personal project designed as a copy of Meta's Threads platform with additional functionalities."
             />
           </div>
 
@@ -78,18 +98,6 @@ export default function Works({ forwardedRef, hashRef }) {
               type="Web Design • Frontend Development"
               year="2024"
               tools="ReactJS • SCSS • Figma • Vite"
-            />
-          </div> */}
-
-          {/* <div className="col-span-1 h-fit md:col-span-4">
-            <Projects
-              link="https://sunnysidechallenge.netlify.app"
-              img={c2p_launch}
-              alt="sunnyside project mockup"
-              name="SUNNYSIDE LANDING PAGE"
-              type="Frontend Development"
-              year="2022"
-              tools="HTML • TailwindCSS • JavaScript"
             />
           </div> */}
         </div>
