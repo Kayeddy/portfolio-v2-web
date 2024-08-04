@@ -23,7 +23,7 @@ export default function Works({ forwardedRef, hashRef }) {
             <Projects
               link="https://maski.pet"
               img={maski}
-              alt="Maski"
+              alt="Maski_official_website"
               name="Maski"
               type="Web Design • Fullstack Development"
               year="2024"
@@ -51,7 +51,7 @@ export default function Works({ forwardedRef, hashRef }) {
           {/* Project #3 */}
           <div className="col-span-1 h-fit md:col-span-4">
             <Projects
-              link="https://connect2pet.app"
+              link="https://connect2petlaunch-c4fgnbp1w-kayeddys-projects.vercel.app"
               img={c2p_launch}
               alt="connect_2_pet_pre_launch_website"
               name="CONNECT2PET PRE-LAUNCH"
@@ -67,7 +67,7 @@ export default function Works({ forwardedRef, hashRef }) {
             <Projects
               link="https://globaldeveloperclubs.com"
               img={gdc}
-              alt="personal threads clone website"
+              alt="global_developers_club_official_website"
               name="GlOBAL DEVELOPERS CLUB"
               type="Web Design • Fullstack Development "
               year="2023"
@@ -78,7 +78,7 @@ export default function Works({ forwardedRef, hashRef }) {
 
           <div className="col-span-1 h-fit md:col-span-4">
             <Projects
-              link="https://sunnysidechallenge.netlify.app"
+              link="https://threads-clone-web.vercel.app"
               img={threadsy}
               alt="threads_clone"
               name="THREADS CLONE"
