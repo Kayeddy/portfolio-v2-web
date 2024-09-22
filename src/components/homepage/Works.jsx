@@ -5,6 +5,7 @@ import gdc from "/src/assets/images/gdc.webp";
 import threadsy from "/src/assets/images/threadsy.webp";
 import c2p_launch from "/src/assets/images/c2p_launch.webp";
 import maski from "/src/assets/images/maski.webp";
+import gunny from "/src/assets/images/gunny-games.webp";
 
 import Projects from "../ui/Projects";
 import Heading from "../ui/Heading";
@@ -63,16 +64,17 @@ export default function Works({ forwardedRef, hashRef }) {
           </div>
 
           {/* Project #4 */}
+
           <div className="col-span-1 pt-0 md:col-span-7 md:pt-16">
             <Projects
-              link="https://globaldeveloperclubs.com"
-              img={gdc}
-              alt="global_developers_club_official_website"
-              name="GlOBAL DEVELOPERS CLUB"
-              type="Web Design • Fullstack Development "
-              year="2023"
-              tools="NextJs • Typescript • TailwindCSS • MongoDB"
-              description="At Global Developers Club, we provide exclusive resources and support from our partners to help you and your co-founders or team members take your project to the next level. From the initial idea to a fully developed product, we are here to assist you every step of the way."
+              link="https://www.gunnygames.com/"
+              img={gunny}
+              alt="gunny_games_official_website"
+              name="GUNNY GAMES"
+              type="Web Design • Frontend Development"
+              year="2024"
+              tools="NextJs • Typescript • TailwindCSS • SASS • Figma"
+              description="Gunny Games Studios is a pioneering video game development company that integrates blockchain technology to deliver an enhanced and unique user experience."
             />
           </div>
 
@@ -86,6 +88,19 @@ export default function Works({ forwardedRef, hashRef }) {
               year="2024"
               tools="NextJs • Typescript • TailwindCSS • MongoDB"
               description="A personal project designed as a copy of Meta's Threads platform with additional functionalities."
+            />
+          </div>
+
+          <div className="col-span-1 pt-0 md:col-span-7 md:pt-16">
+            <Projects
+              link="https://globaldeveloperclubs.com"
+              img={gdc}
+              alt="global_developers_club_official_website"
+              name="GlOBAL DEVELOPERS CLUB"
+              type="Web Design • Fullstack Development "
+              year="2023"
+              tools="NextJs • Typescript • TailwindCSS • MongoDB"
+              description="At the Global Developers Club, we provide exclusive resources and support from our partners to help you and your co-founders or team members take your project to the next level. From the initial idea to a fully developed product, we are here to assist you every step of the way."
             />
           </div>
 

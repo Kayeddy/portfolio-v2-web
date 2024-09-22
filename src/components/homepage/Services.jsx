@@ -22,7 +22,7 @@ export default function Services({ hashRef }) {
     <section
       ref={hashRef}
       id="services"
-      className="h-fit min-h-screen py-24"
+      className="mt-36 h-fit min-h-screen py-24"
       aria-label="services"
     >
       <Heading title="services" />

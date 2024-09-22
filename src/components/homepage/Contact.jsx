@@ -183,11 +183,11 @@ export default function Contact({ hashRef }) {
               </a>
 
               <a
-                href="/Resume.pdf"
+                href="/Resume.docx"
                 download
                 className="group relative w-fit cursor-pointer"
               >
-                <span>Curriculum Vitae</span>
+                <span>Resume</span>
                 <span className="absolute bottom-0 left-0 h-[0.12em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
               </a>
             </div>
