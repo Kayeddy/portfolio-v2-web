@@ -183,7 +183,7 @@ export default function Contact({ hashRef }) {
               </a>
 
               <a
-                href="/Resume.docx"
+                href="/Resume.pdf"
                 download
                 className="group relative w-fit cursor-pointer"
               >

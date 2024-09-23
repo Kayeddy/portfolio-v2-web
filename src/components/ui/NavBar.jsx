@@ -90,7 +90,7 @@ export default function NavBar({ sectionRefs }) {
         </a>
 
         <a
-          href="/Resume.docx"
+          href="/Resume.pdf"
           download
           className="group relative hidden rounded-full md:inline-block"
         >
