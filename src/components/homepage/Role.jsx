@@ -5,7 +5,7 @@ export default function Role({ forwardedRef, hashRef }) {
     <div id="about" ref={hashRef}>
       <section
         ref={forwardedRef}
-        className="nav-change my-20 flex select-none flex-col items-center justify-center overflow-hidden py-10 md:my-[12%] md:pt-[10%]"
+        className="nav-change my-20 flex select-none flex-col items-center justify-center overflow-hidden md:my-[12%] md:py-10 md:pt-[10%]"
         aria-label=""
       >
         <div className="flex w-full items-center space-x-20">
