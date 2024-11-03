@@ -2,10 +2,11 @@
 
 import throu from "/src/assets/images/throu.webp";
 import gdc from "/src/assets/images/gdc.webp";
-import threadsy from "/src/assets/images/threadsy.webp";
+// import threadsy from "/src/assets/images/threadsy.webp";
 import c2p_launch from "/src/assets/images/c2p_launch.webp";
 import maski from "/src/assets/images/maski.webp";
 import gunny from "/src/assets/images/gunny-games.webp";
+import gunnyGacha from "/src/assets/images/gunny-gacha.webp";
 
 import Projects from "../ui/Projects";
 import Heading from "../ui/Heading";
@@ -78,7 +79,7 @@ export default function Works({ forwardedRef, hashRef }) {
             />
           </div>
 
-          <div className="col-span-1 h-fit md:col-span-4">
+          {/* <div className="col-span-1 h-fit md:col-span-4">
             <Projects
               link="https://threads-clone-web.vercel.app"
               img={threadsy}
@@ -88,6 +89,19 @@ export default function Works({ forwardedRef, hashRef }) {
               year="2024"
               tools="NextJs • Typescript • TailwindCSS • MongoDB"
               description="A personal project designed as a copy of Meta's Threads platform with additional functionalities."
+            />
+          </div> */}
+
+          <div className="col-span-1 pt-0 md:col-span-5 md:pt-80">
+            <Projects
+              link="https://gacha.gunnygames.com/"
+              img={gunnyGacha}
+              alt="gunny's gacha interface website"
+              name="Gunny Gacha Interface"
+              type="Web Design • Frontend Development"
+              year="2024"
+              tools="ReactJS • TailwindCSS • Figma • Vite"
+              description="Gunny Games Gacha is Gunny Games' official platform, where users can win prizes and earn HERO tokens, the company’s official cryptocurrency."
             />
           </div>
 
