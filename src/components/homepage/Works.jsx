@@ -92,7 +92,7 @@ export default function Works({ forwardedRef, hashRef }) {
             />
           </div> */}
 
-          <div className="col-span-1 pt-0 md:col-span-5 md:pt-80">
+          {/* <div className="col-span-1 pt-0 md:col-span-5 md:pt-80">
             <Projects
               link="https://gacha.gunnygames.com/"
               img={gunnyGacha}
@@ -103,7 +103,7 @@ export default function Works({ forwardedRef, hashRef }) {
               tools="ReactJS • TailwindCSS • Figma • Vite"
               description="Gunny Games Gacha is Gunny Games' official platform, where users can win prizes and earn HERO tokens, the company’s official cryptocurrency."
             />
-          </div>
+          </div> */}
 
           <div className="col-span-1 pt-0 md:col-span-7 md:pt-16">
             <Projects
