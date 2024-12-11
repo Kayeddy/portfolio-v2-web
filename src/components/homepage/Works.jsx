@@ -68,7 +68,7 @@ export default function Works({ forwardedRef, hashRef }) {
 
           <div className="col-span-1 pt-0 md:col-span-7 md:pt-16">
             <Projects
-              link="https://www.gunnygames.com/"
+              link="https://gunny-games-web.vercel.app/"
               img={gunny}
               alt="gunny_games_official_website"
               name="GUNNY GAMES"
@@ -94,8 +94,7 @@ export default function Works({ forwardedRef, hashRef }) {
 
           <div className="col-span-1 pt-0 md:col-span-5 md:pt-80">
             <Projects
-              // link="https://gacha.gunnygames.com/"
-              link="https://gunny-games-web.vercel.app/"
+              link="https://gacha.gunnygames.com/"
               img={gunnyGacha}
               alt="gunny's gacha interface website"
               name="Gunny Gacha Interface"
