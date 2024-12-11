@@ -23,6 +23,20 @@ export default function Works({ forwardedRef, hashRef }) {
           {/* Project #1 */}
           <div className="col-span-1 md:col-span-12">
             <Projects
+              link="https://throu.app"
+              img={throu}
+              alt="throu_investments_platform"
+              name="Throu investments"
+              type="Blockchain development • Fullstack Development"
+              year="2022"
+              tools="ReactJS • TailwindCSS • JavaScript • Vite "
+              description="Platform that allows the tokenization of real estate assets, making it easier for investors to buy and sell fractions of properties."
+            />
+          </div>
+
+          {/* Project #2 */}
+          <div className="col-span-1 h-fit pt-0 md:col-span-8 md:pt-20">
+            <Projects
               link="https://maski.pet"
               img={maski}
               alt="Maski_official_website"
@@ -33,20 +47,6 @@ export default function Works({ forwardedRef, hashRef }) {
               description="Tinder-like app designed to make pet adoption an
           enjoyable and intuitive experience. Swipe through profiles of adorable
           pets, just like you would on a dating app, to find the perfect match."
-            />
-          </div>
-
-          {/* Project #2 */}
-          <div className="col-span-1 h-fit pt-0 md:col-span-8 md:pt-20">
-            <Projects
-              link="https://throu.app"
-              img={throu}
-              alt="throu_investments_platform"
-              name="Throu investments"
-              type="Blockchain development • Fullstack Development"
-              year="2022"
-              tools="ReactJS • TailwindCSS • JavaScript • Vite "
-              description="Platform that allows the tokenization of real estate assets, making it easier for investors to buy and sell fractions of properties."
             />
           </div>
 
@@ -105,7 +105,7 @@ export default function Works({ forwardedRef, hashRef }) {
             />
           </div> */}
 
-          <div className="col-span-1 pt-0 md:col-span-7 md:pt-16">
+          <div className="col-span-1 pt-0 md:col-span-5 md:pt-80">
             <Projects
               link="https://globaldeveloperclubs.com"
               img={gdc}
