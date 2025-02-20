@@ -13,31 +13,37 @@ export default function Projects({
   description,
 }) {
   const [isHovered, setIsHovered] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const hoverVariants = {
     hidden: { opacity: 0, y: 10 },
     visible: { opacity: 1, y: 0 },
   };
 
+  const truncateText = (text, length) => {
+    return text.length > length ? text.substring(0, length) + "..." : text;
+  };
+
+  const isMobile = window.innerWidth <= 768;
+
   return (
     <div>
-      <a
-        target="_blank"
-        rel="noreferrer"
-        href={link}
+      <div
         className="img group relative inline-block overflow-hidden duration-200 ease-linear hover:rounded-3xl"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <img
-          className="w-screen duration-700 ease-in-out group-hover:scale-105"
-          src={img}
-          alt={alt}
-          width="800"
-          height="600"
-        />
+        <a target="_blank" rel="noreferrer" href={link}>
+          <img
+            className="w-screen duration-700 ease-in-out group-hover:scale-105"
+            src={img}
+            alt={alt}
+            width="800"
+            height="600"
+          />
+        </a>
         <AnimatePresence>
-          {isHovered && (
+          {(isHovered || isMobile) && (
             <motion.span
               className="absolute bottom-4 left-0 right-0 mx-auto flex w-[80%] items-center justify-center self-center rounded-[10px] bg-black/50 p-4 align-middle text-body-1 font-light text-white backdrop-blur-lg 2xl:text-2xl"
               initial="hidden"
@@ -46,11 +52,24 @@ export default function Projects({
               variants={hoverVariants}
               transition={{ duration: 0.5, ease: "easeInOut" }}
             >
-              {description}
+              {isMobile && !isExpanded
+                ? truncateText(description, 60)
+                : description}
+              {isMobile && description.length > 60 && (
+                <span
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setIsExpanded(!isExpanded);
+                  }}
+                  className="ml-2 cursor-pointer text-blue-400"
+                >
+                  {isExpanded ? "Read Less" : "Read More"}
+                </span>
+              )}
             </motion.span>
           )}
         </AnimatePresence>
-      </a>
+      </div>
       <div className="mt-4">
         <div className="mb-3 flex space-x-2">
           <p className="flex items-center justify-center rounded-full border border-secondary-600 bg-transparent px-2 py-1 text-body-4 text-secondary-600 2xl:text-2xl">
