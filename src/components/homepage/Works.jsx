@@ -6,6 +6,8 @@ import gdc from "/src/assets/images/gdc.webp";
 import c2p_launch from "/src/assets/images/c2p_launch.webp";
 import gunny from "/src/assets/images/gunny-games.webp";
 
+import tigerKing from "/src/assets/images/tiger-king.webp";
+
 import Projects from "../ui/Projects";
 import Heading from "../ui/Heading";
 
@@ -63,7 +65,36 @@ export default function Works({ forwardedRef, hashRef }) {
           </div>
 
           {/* Project #4 */}
-          <div className="col-span-1 pt-0 md:col-span-5 md:pt-80">
+
+          <div className="col-span-1 h-fit pt-0 md:col-span-8 md:pt-20">
+            <Projects
+              link="https://tigerfarttoken.com"
+              img={tigerKing}
+              alt="Tiger_king_memecoin_website"
+              name="Tiger King Memecoin"
+              type="Web Design • Frontend Development"
+              year="2025"
+              tools="Figma • ReactJs • Typescript • TailwindCSS • Vite"
+              description="Tiger Fart Token is a meme cryptocurrency that combines humor with blockchain technology. The website keeps it simple—offering direct links to the social media and the official contract address. No fluff, just the essentials for those who want to follow the chaos or dive right in."
+            />
+          </div>
+
+          {/* Project #5 */}
+
+          <div className="col-span-1 h-fit md:col-span-4">
+            <Projects
+              link="https://threads-clone-web.vercel.app"
+              img={gdc}
+              alt="threads_clone"
+              name="THREADS CLONE"
+              type="Web Design • Fullstack Development "
+              year="2024"
+              tools="NextJs • Typescript • TailwindCSS • MongoDB"
+              description="A personal project designed as a copy of Meta's Threads platform with additional functionalities."
+            />
+          </div>
+
+          {/* <div className="col-span-1 pt-0 md:col-span-5 md:pt-80">
             <Projects
               link="https://globaldeveloperclubs.com"
               img={gdc}
@@ -73,19 +104,6 @@ export default function Works({ forwardedRef, hashRef }) {
               year="2023"
               tools="NextJs • Typescript • TailwindCSS • MongoDB"
               description="At the Global Developers Club, we provide exclusive resources and support from our partners to help you and your co-founders or team members take your project to the next level. From the initial idea to a fully developed product, we are here to assist you every step of the way."
-            />
-          </div>
-
-          {/* <div className="col-span-1 h-fit md:col-span-4">
-            <Projects
-              link="https://threads-clone-web.vercel.app"
-              img={threadsy}
-              alt="threads_clone"
-              name="THREADS CLONE"
-              type="Web Design • Fullstack Development "
-              year="2024"
-              tools="NextJs • Typescript • TailwindCSS • MongoDB"
-              description="A personal project designed as a copy of Meta's Threads platform with additional functionalities."
             />
           </div> */}
 
@@ -99,20 +117,6 @@ export default function Works({ forwardedRef, hashRef }) {
               year="2024"
               tools="ReactJS • TailwindCSS • Figma • Vite"
               description="Gunny Games Gacha is Gunny Games' official platform, where users can win prizes and earn HERO tokens, the company’s official cryptocurrency."
-            />
-          </div> */}
-          {/* <div className="col-span-1 h-fit pt-0 md:col-span-8 md:pt-20">
-            <Projects
-              link="https://maski.pet"
-              img={maski}
-              alt="Maski_official_website"
-              name="Maski"
-              type="Web Design • Fullstack Development"
-              year="2024"
-              tools="Figma • NextJs • Typescript • TailwindCSS • MongoDB"
-              description="Tinder-like app designed to make pet adoption an
-          enjoyable and intuitive experience. Swipe through profiles of adorable
-          pets, just like you would on a dating app, to find the perfect match."
             />
           </div> */}
 
