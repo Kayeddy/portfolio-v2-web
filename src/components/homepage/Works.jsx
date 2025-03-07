@@ -83,14 +83,14 @@ export default function Works({ forwardedRef, hashRef }) {
 
           <div className="col-span-1 h-fit md:col-span-4">
             <Projects
-              link="https://threads-clone-web.vercel.app"
+              link="https://globaldeveloperclubs.com"
               img={gdc}
-              alt="threads_clone"
-              name="THREADS CLONE"
+              alt="global_developers_club_official_website"
+              name="GlOBAL DEVELOPERS CLUB"
               type="Web Design • Fullstack Development "
-              year="2024"
+              year="2023"
               tools="NextJs • Typescript • TailwindCSS • MongoDB"
-              description="A personal project designed as a copy of Meta's Threads platform with additional functionalities."
+              description="At the Global Developers Club, we provide exclusive resources and support from our partners to help you and your co-founders or team members take your project to the next level. From the initial idea to a fully developed product, we are here to assist you every step of the way."
             />
           </div>
 
