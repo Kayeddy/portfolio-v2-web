@@ -7,6 +7,7 @@ import c2p_launch from "/src/assets/images/c2p_launch.webp";
 import gunny from "/src/assets/images/gunny-games.webp";
 
 import tigerKing from "/src/assets/images/tiger-king.webp";
+import maxxwin from "/src/assets/images/maxx_win.webp";
 
 import Projects from "../ui/Projects";
 import Heading from "../ui/Heading";
@@ -71,7 +72,7 @@ export default function Works({ forwardedRef, hashRef }) {
               link="https://tigerfarttoken.com"
               img={tigerKing}
               alt="Tiger_king_memecoin_website"
-              name="Tiger King Memecoin"
+              name="Tiger King memecoin"
               type="Web Design • Frontend Development"
               year="2025"
               tools="Figma • ReactJs • Typescript • TailwindCSS • Vite"
@@ -83,6 +84,21 @@ export default function Works({ forwardedRef, hashRef }) {
 
           <div className="col-span-1 h-fit md:col-span-4">
             <Projects
+              link="https://maxxwin.io/"
+              img={maxxwin}
+              alt="maxx_win_memecoin_website"
+              name="$69420 memecoin"
+              type="Web Design • Frontend Development"
+              year="2025"
+              tools="Figma • ReactJs • Javascript • TailwindCSS • Vite"
+              description="$69420: The memecoin for winners. Born from community vibes, built for the crypto curious. The website delivers just what you need—contract address, trading links, and social channels. No complicated stuff, just a clean space to join the ride."
+            />
+          </div>
+
+          {/* Project #6 */}
+
+          <div className="col-span-1 pt-0 md:col-span-5 md:pt-80">
+            <Projects
               link="https://globaldeveloperclubs.com"
               img={gdc}
               alt="global_developers_club_official_website"
@@ -96,19 +112,6 @@ export default function Works({ forwardedRef, hashRef }) {
 
           {/* <div className="col-span-1 pt-0 md:col-span-5 md:pt-80">
             <Projects
-              link="https://globaldeveloperclubs.com"
-              img={gdc}
-              alt="global_developers_club_official_website"
-              name="GlOBAL DEVELOPERS CLUB"
-              type="Web Design • Fullstack Development "
-              year="2023"
-              tools="NextJs • Typescript • TailwindCSS • MongoDB"
-              description="At the Global Developers Club, we provide exclusive resources and support from our partners to help you and your co-founders or team members take your project to the next level. From the initial idea to a fully developed product, we are here to assist you every step of the way."
-            />
-          </div> */}
-
-          {/* <div className="col-span-1 pt-0 md:col-span-5 md:pt-80">
-            <Projects
               link="https://gacha.gunnygames.com/"
               img={gunnyGacha}
               alt="gunny's gacha interface website"
@@ -116,7 +119,7 @@ export default function Works({ forwardedRef, hashRef }) {
               type="Web Design • Frontend Development"
               year="2024"
               tools="ReactJS • TailwindCSS • Figma • Vite"
-              description="Gunny Games Gacha is Gunny Games' official platform, where users can win prizes and earn HERO tokens, the company’s official cryptocurrency."
+              description="Gunny Games Gacha is Gunny Games' official platform, where users can win prizes and earn HERO tokens, the company's official cryptocurrency."
             />
           </div> */}
 

@@ -20,6 +20,11 @@ export default function Projects({
     visible: { opacity: 1, y: 0 },
   };
 
+  const contentVariants = {
+    collapsed: { height: "auto" },
+    expanded: { height: "auto" }
+  };
+
   const truncateText = (text, length) => {
     return text.length > length ? text.substring(0, length) + "..." : text;
   };
@@ -52,20 +57,30 @@ export default function Projects({
               variants={hoverVariants}
               transition={{ duration: 0.5, ease: "easeInOut" }}
             >
-              {isMobile && !isExpanded
-                ? truncateText(description, 60)
-                : description}
-              {isMobile && description.length > 60 && (
-                <span
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setIsExpanded(!isExpanded);
-                  }}
-                  className="ml-2 cursor-pointer text-blue-400"
-                >
-                  {isExpanded ? "Read Less" : "Read More"}
-                </span>
-              )}
+              <motion.div
+                initial="collapsed"
+                animate={isExpanded ? "expanded" : "collapsed"}
+                variants={contentVariants}
+                transition={{ duration: 0.4, ease: [0.04, 0.62, 0.23, 0.98] }}
+                className="flex items-center"
+              >
+                {isMobile && !isExpanded
+                  ? truncateText(description, 60)
+                  : description}
+                {isMobile && description.length > 60 && (
+                  <motion.span
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setIsExpanded(!isExpanded);
+                    }}
+                    className="ml-2 cursor-pointer text-blue-400"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    {isExpanded ? "Read Less" : "Read More"}
+                  </motion.span>
+                )}
+              </motion.div>
             </motion.span>
           )}
         </AnimatePresence>
