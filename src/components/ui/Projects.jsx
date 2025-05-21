@@ -22,7 +22,7 @@ export default function Projects({
 
   const contentVariants = {
     collapsed: { height: "auto" },
-    expanded: { height: "auto" }
+    expanded: { height: "auto" },
   };
 
   const truncateText = (text, length) => {
@@ -87,10 +87,10 @@ export default function Projects({
       </div>
       <div className="mt-4">
         <div className="mb-3 flex space-x-2">
-          <p className="flex items-center justify-center rounded-full border border-secondary-600 bg-transparent px-2 py-1 text-body-4 text-secondary-600 2xl:text-2xl">
+          <p className="flex items-center justify-center rounded-full border border-secondary-600 bg-transparent px-2 py-2 text-body-4 text-secondary-600 2xl:text-2xl">
             {year}
           </p>
-          <p className="flex items-center justify-center rounded-full border border-secondary-600 bg-transparent px-2 py-1 text-body-4 text-secondary-600 2xl:text-2xl">
+          <p className="flex items-center justify-center rounded-full border border-secondary-600 bg-transparent px-8 py-2 text-body-4 text-secondary-600 2xl:text-2xl">
             {tools}
           </p>
         </div>
